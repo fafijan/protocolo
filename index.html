@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet"> 
+  <title>Protocolo Geral</title>
+</head>
+<body>
+  <div id="prot">
+    <header>
+      <div>
+        <img id="img"src="https://scontent.fbfh3-3.fna.fbcdn.net/v/t39.30808-6/244549555_4338254932917246_1929807371213723644_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=q5M9E0ax9ksAX9AFLR7&_nc_ht=scontent.fbfh3-3.fna&oh=00_AT__jYW6XHSB9Ukl2eGXmRD58CtsNCd9SLm5-U1H3LmP_w&oe=632EAAAA"
+       alt="fafijan_logo">
+      </div>
+      <div class="fundacao">
+       <h1>Faculdade de Jandaia do Sul</h1>
+       <p> Reconhecida conforme  Decreto Nº 71.903 de 14/03/1973, D.O.U. de 15/03/1973 | Seção 1. Recredenciada pela Portaria Ministerial Nº 34, de 28/01/2015, D.O.U. de 12/2/2015 - Mantida pela Fundação Educacional Jandaia do Sul - CNPJ.:78.197.993/0001-20</p>
+        
+      </div>
+    </header>
+    <h4 class="titulo">PROTOCOLO GERAL</h4> 						
+    <div class="linha1">
+      <label  for="Interessado">Interessado</label>
+      <input name="interessado2" id="interessado" size="70" type="text"  value="Digite aqui o nome do interessado" />
+      <label for="RA">RA</label>
+      <input size="15" type="text" id="ra" value="Apenas números" maxlength="9" />
+    </div>
+    <div class="linha2">
+      <label>Telefone</label>
+      <input type="text"  id="telefone" value="(xx)x xxxx-xxxx"/>
+      <label for="email">E-Mail</label>
+      <input size="37" type="text" id="email" value="exemplo@exemplo.com"/>
+      <label>CPF</label>
+      <input type="text" id="cpf" maxlength="11" value="000.000.000-00" pattern="[0-9]{11}"/>
+    </div>
+    <div class="linha3">    
+      <label>Periodo</label>
+      <input size="10" type="text" id="periodo" value="Ano/Semestre" />  
+      <label>Curso/Setor</label>
+      <input size="37"type="text" id="setor" value="Curso, se aluno setor se externo" />
+      <label>Turma</label>
+      <input type="text" id="turma" value="Turma, se aluno" />
+    </div>
+    <div class="linha4">
+      <form>
+        <label>Ano de Conclusão</label>
+        <input type="text" id="anoconclusao" value="Se aluno"/>
+        <label for="orgao">Orgão ou setor de destino</label>
+        <select name="orgao" id="orgao">
+          <option value="default">Selecionar</option> 
+          <option value="11.107">Coord. de Psicologia</option>
+          <option value="12">Coord de Pós Graduação</option>
+          <option value="12.1">Secretaria de Pós Graduação</option>
+          <option value="13">Coord. de Extensão</option>
+          <option value="13.1">Secretaria de extensão </option>
+          <option value="0000">Comunidade Externa</option>
+          <option value="xx">Outros</option>
+        </select>
+      </form>
+    </div>     
+    <div class="linha5">
+      <label>Destinatário</label>
+      <input size="39" type="text" id="destinatario" value="Responsável pelo setor"/>							
+      <label>Assunto</label>
+      <input size="40" type="text" id="assunto" value="Assunto" /></br>    								
+    </div>
+    <div class="observacoes">
+      <label>Observações</label></br>
+      <textarea type="text" id="observacoes" rows="8" cols="105" >Observações</textarea>							
+    </div>
+    <div class="assinatura">
+      <p>____________________________</p>
+      <p>...................Assinatura....................</p>
+
+    </div>
+    <footer>      				
+      <p>058-4 - Protocolo Geral							(via protocolo)</p>
+      <p id="data">Local, dd/mm/aaa</p>
+    </footer>
+  </div>
+  <div id="botao">
+    <button onclick="replicar()" id="replicar" type="submit"> Copiar dados na parte interessada </button>
+  </div>
+  <div id="prot">
+    <header>
+      <div>
+        <img id="img"src="https://scontent.fbfh3-3.fna.fbcdn.net/v/t39.30808-6/244549555_4338254932917246_1929807371213723644_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=q5M9E0ax9ksAX9AFLR7&_nc_ht=scontent.fbfh3-3.fna&oh=00_AT__jYW6XHSB9Ukl2eGXmRD58CtsNCd9SLm5-U1H3LmP_w&oe=632EAAAA"
+       alt="fafijan_logo">
+      </div>
+      <div class="fundacao">
+       <h1>Faculdade de Jandaia do Sul</h1>
+       <p> Reconhecida conforme  Decreto Nº 71.903 de 14/03/1973, D.O.U. de 15/03/1973 | Seção 1. Recredenciada pela Portaria Ministerial Nº 34, de 28/01/2015, D.O.U. de 12/2/2015 - Mantida pela Fundação Educacional Jandaia do Sul - CNPJ.:78.197.993/0001-20</p>
+        
+      </div>
+    </header>
+    <h4 class="titulo">PROTOCOLO GERAL</h4> 						
+    <div class="linha1">
+      <label for="interessado2">Interessado</label>
+      <input size="70" name="interessado2" type="text" id="interessado2" value=" " />
+      <label for="RA">RA</label>
+      <input size="15" type="text" id="ra2" />
+    </div>
+    <div class="linha2">
+      <label>Telefone</label>
+      <input type="text" id="telefone2" value=" "/>
+      <label for="email">E-Mail</label>
+      <input size="37" type="text" id="email2" />
+      <label>CPF</label>
+      <input type="text" id="cpf2"  />
+    </div>
+    <div class="linha3">    
+      <label>Periodo</label>
+      <input size="10" type="text" id="periodo2" />  
+      <label>Curso/Setor</label>
+      <input size="37"type="text" id="setor2" />
+      <label>Turma</label>
+      <input type="text" id="turma2"  />
+    </div>
+    <div class="linha4">
+      <form>
+        <label>Ano de Conclusão</label>
+        <input type="text" id="anoconclusao2"/>
+        <label for="orgao">Orgão ou setor de destino</label>
+        <select name="orgao" id="orgao2"> 
+          <option value="default">Selecionar</option>
+          <option value="11.107">Coord. de Psicologia</option>
+          <option value="12">Coord de Pós Graduação</option>
+          <option value="12.1">Secretaria de Pós Graduação</option>
+          <option value="13">Coord. de Extensão</option>
+          <option value="13.1">Secretaria de extensão </option>
+          <option value="0000">Comunidade Externa</option>
+          <option value="xx">Outros</option>
+        </select>
+      </form>
+    </div>      
+    <div class="linha5">
+      <label>Destinatário</label>
+      <input size="39" type="text" id="destinatario2"/>							
+      <label>Assunto</label>
+      <input size="40" type="text" id="assunto2"/></br>    								
+    </div>
+    <div class="observacoes">
+      <label>Observações</label></br>
+      <textarea type="text" id="observacoes2" placeholder=" " rows="8" cols="105" ></textarea>							
+    </div>
+    <footer>      				
+      <p>058-4 - Protocolo Geral							(via interessado)</p>
+      <p id="data2">Local, dd/mm/aaa</p>
+    </footer>
+  </div>
+<script src="scripts.js"></script>
+</body>
+</html>
