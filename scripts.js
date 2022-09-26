@@ -15,7 +15,7 @@ function replicar() {
   const ra = document.querySelector("#ra")
   const rav = ra.value
   const ra2 = document.querySelector("#ra2")
-  if (rav == "Apenas números") {
+  if (rav == "") {
     ra2.value = "Não é Aluno"
   } else {
     ra2.value = rav    
@@ -44,7 +44,7 @@ function replicar() {
   const periodov = periodo.value
   const periodo2 =document.querySelector("#periodo2")
 
-  if (periodov == "Ano/Semestre") {
+  if (periodov == "") {
     periodo2.value = "******"
     
   } else {
@@ -57,7 +57,7 @@ function replicar() {
   const setorv = setor.value
   const setor2 = document.querySelector("#setor2")
 
-  if (setorv == "Curso, se aluno setor se externo") {
+  if (setorv == "") {
     alert("Prencher Curso/Setor")
     
   }else{
@@ -71,7 +71,7 @@ function replicar() {
   const turma =document.querySelector("#turma")
   const turmav = turma.value
   const turma2 = document.querySelector("#turma2")
-  if (turmav == "Turma, se aluno") {
+  if (turmav == "") {
     turma2.value = "Não é aluno"
   } else {
     turma2.value = turmav
@@ -83,7 +83,7 @@ function replicar() {
   const anoconclusao = document.querySelector("#anoconclusao")
   const anoconclusaov = anoconclusao.value
   const anoconclusao2 = document.querySelector("#anoconclusao2")
-  if (anoconclusaov == "Se aluno") {
+  if (anoconclusaov == "") {
     anoconclusao2.value = "Não é aluno"
   } else {
     anoconclusao2.value = anoconclusaov
@@ -99,20 +99,40 @@ function replicar() {
   const destinatario = document.querySelector("#destinatario")
   const destinatariov = destinatario.value
   const destinatario2 = document.querySelector("#destinatario2")
-  destinatario2.value = destinatariov
+  if (destinatariov == "") {
+    alert("Favor preencer destinatário")
+  } else {
+    destinatario2.value = destinatariov
+
+  }
 
   //assunto
   const assunto = document.querySelector("#assunto")
   const assuntov= assunto.value
   const assunto2 = document.querySelector("#assunto2")
-  assunto2.value = assuntov
+
+  if (assuntov == "") {
+    alert("Prencher Assunto")
+    
+  }else{
+    assunto2.value = assuntov
+    
+  }
+
+  
 
   /* Campo observações*/ 
   const observacoes = document.querySelector("#observacoes")
   const observacoesv = observacoes.value
   const observacoes2 = document.querySelector("#observacoes2")
-  observacoes2.value = observacoesv 
-  
+   
+  if (observacoesv == "" ) {
+    observacoes2.value = "Sem observações"
+    
+  } else {
+    observacoes2.value = observacoesv
+    
+  }
 
   
 
@@ -123,7 +143,7 @@ function replicar() {
   document.getElementById("data2").innerHTML = "<p>Jandaia do Sul," + date +"</p>"
   
   
-  print()
+  
 
 
 }
