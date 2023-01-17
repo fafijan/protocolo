@@ -5,6 +5,8 @@ cpf.addEventListener("blur", function(){
 });
 
 function replicar() {
+  var impressao = true
+
   /*linha 1 */
   //interessado
   const interessado = document.querySelector("#interessado")
@@ -59,7 +61,7 @@ function replicar() {
 
   if (setorv == "") {
     alert("Prencher Curso/Setor")
-    
+    impressao = false
   }else{
     setor2.value = setorv
   }
@@ -101,6 +103,7 @@ function replicar() {
   const destinatario2 = document.querySelector("#destinatario2")
   if (destinatariov == "") {
     alert("Favor preencer destinatário")
+    impressao = false
   } else {
     destinatario2.value = destinatariov
 
@@ -113,6 +116,7 @@ function replicar() {
 
   if (assuntov == "") {
     alert("Prencher Assunto")
+    impressao = false
     
   }else{
     assunto2.value = assuntov
@@ -143,7 +147,11 @@ function replicar() {
   document.getElementById("data2").innerHTML = "<p>Jandaia do Sul," + date +"</p>"
   
   
-  
-print()
+  if(impressao == true){
+    print()
+  }else {
+    alert("Valide os dados para imprimir")
+  }
+    
 
 }
